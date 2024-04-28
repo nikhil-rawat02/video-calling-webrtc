@@ -1,0 +1,19 @@
+<main class="relative h-[33rem]">
+  <div class="flex flex-col sm:flex-row gap-2" *ngIf="!loading">
+    <div class="flex items-center flex-col w-full sm:w-1/2">
+      <div id="remote-container">
+      </div>
+      <p class="text-center">Remote</p>
+    </div>
+    <div class="flex items-center flex-col w-full sm:w-1/2">
+      <div id="local-container">
+      </div>
+      <p class="text-center">Local</p>
+    </div>
+  </div>
+  <div *ngIf="loading" class="absolute h-[35rem] w-screen bg-black opacity-75">
+  </div>
+</main>
+<footer class="h-[7.6rem] bg-black">
+
+</footer>

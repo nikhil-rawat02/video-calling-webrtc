@@ -1,16 +1,7 @@
-<div class="container-fluid">
-  <form [formGroup]="conversationFormGroup">
-      <div>
-        <mat-label>Conversation Name</mat-label>
-        <input type="text" matInput placeholder="abcd" formControlName="name">
-      </div>
-      <button mat-raised-button color="primary" type="button" (click)="getOrCreateConversation()" title="Get Or Create Conversation">Connect</button>
-  </form>
-
-  <div>
-      <div id="remote-container">
-      </div>
-      <div id="local-container">
-      </div>
+<main class="flex items-center justify-center h-full relative" >
+  <div class="bg-center inset-0 w-full h-full flex justify-center items-center filter bg-image">
+    <div class="h-full w-96 rounded-lg flex justify-center items-center relative z-100 p-8">
+      <button class="bg-blue-500 shadow-inner shadow-black px-5 py-2 rounded-md z-100" type="button" (click)="createCall()" title="Connect">Connect</button>
+    </div>
   </div>
-</div>
+</main>

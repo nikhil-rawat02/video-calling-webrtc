@@ -1,1 +1,44 @@
-<router-outlet></router-outlet>
+<section class="flex flex-col w-screen h-screen">
+  <header class="flex h-20 w-full shrink-0 items-center px-4 md:px-6 shadow-xl">
+    <a class="flex items-center" href="#">
+      <app-video-icon></app-video-icon>
+      <span class="ml-2 text-lg font-bold">Video Consult</span>
+    </a>
+    <nav class="ml-auto hidden lg:flex">
+      <nav aria-label="Main" data-orientation="horizontal" dir="ltr"
+        class="relative z-10 flex max-w-max flex-1 items-center justify-center">
+        <div style="position:relative">
+          <ul data-orientation="horizontal" class="group flex flex-1 list-none items-center justify-center space-x-1"
+            dir="ltr">
+            <a class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              data-radix-collection-item="" href="#">
+              Home
+            </a>
+            <a class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              data-radix-collection-item="" href="#">
+              Services
+            </a>
+            <a class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              data-radix-collection-item="" href="#">
+              About
+            </a>
+            <a class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              data-radix-collection-item="" href="#">
+              Contact
+            </a>
+          </ul>
+        </div>
+        <div class="absolute left-0 top-full flex justify-center"></div>
+      </nav>
+    </nav>
+    <button
+      class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 lg:hidden"
+      type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rtafnnja:" data-state="closed">
+     <app-menu-icon></app-menu-icon>
+      <span class="sr-only">More</span>
+    </button>
+  </header>
+  <main class="h-full">
+    <router-outlet></router-outlet>
+  </main>
+</section>

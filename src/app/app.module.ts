@@ -9,11 +9,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { VideoCallComponent } from './video-call/video-call.component';
+import { CallComponent } from './call/call.component';
+import { VideoIconComponent } from './component/video-icon/video-icon.component';
+import { MenuIconComponent } from './component/menu-icon/menu-icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VideoCallComponent
+    VideoCallComponent,
+    CallComponent,
+    VideoIconComponent,
+    MenuIconComponent
   ],
   imports: [
     BrowserModule,
